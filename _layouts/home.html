@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.landing-title }}</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase;">{{ site.description }}</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+        <section id="two">
+            <div class="inner">
+                <a href="http://translate.google.com/translate?hl=&sl=en&tl=es&u=http://mkefly.github.io" class="button">Google.translate to spanish</a></li>
+                <div class="row top-buffer1"></div>
+                <header class="major">
+                    <h1>Coronavirus mortality estimates</h1>
+                </header>
+                <h2>Description</h2>
+                <p> We study the impact of the COVID-19 pandemia by analysing the data from the John Hopkins catalogue. We produce dynamical and predictive models of the 'number of deaths' by calibrating the data to two sigmoidal curves ( <a data-scroll href="#logistic">Logistic</a>  and  <a data-scroll href="#gompertz">Gompertz</a> ) using Bayesian parameter estimation tools. This interface is a rapid applet to produce predictions for countries with at least 140 fatalities, countries where few data points are available this uncertainty grows.
+                    We will focus on the number of deaths as it is a more robust value; given that it is not subject to the different way of testing between the countries. Data and plots are updated in a daily basis.<u> Strict confinement measures</u> are essential to flatten the curves predicted by both models.
+                {{ content }}
+            </div>
+        </section>
+    </div>
+
+    {% include footer.html %}
+
+
+</body>
+
+</html>

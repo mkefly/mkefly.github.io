@@ -1,0 +1,124 @@
+<head>
+	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relative_url }}"></script><![endif]-->
+	<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
+	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101242331);</script>
+	<script async src="//static.getclicky.com/js"></script>
+
+
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	  </script>
+	  <script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  </script>
+	  <script>
+	  function includeHTML() {
+		var z, i, elmnt, file, xhttp;
+		/* Loop through a collection of all HTML elements: */
+		z = document.getElementsByTagName("*");
+		for (i = 0; i < z.length; i++) {
+		  elmnt = z[i];
+		  /*search for elements with a certain atrribute:*/
+		  file = elmnt.getAttribute("w3-include-html");
+		  if (file) {
+			/* Make an HTTP request using the attribute value as the file name: */
+			xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			  if (this.readyState == 4) {
+				if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+				if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+				/* Remove the attribute, and call this function once more: */
+				elmnt.removeAttribute("w3-include-html");
+				includeHTML();
+			  }
+			}
+			xhttp.open("GET", file, true);
+			xhttp.send();
+			/* Exit the function: */
+			return;
+		  }
+		}
+	  }
+	  </script>
+	  <style>
+	  .top-buffer { margin-top:100px; }
+	  .top-buffer1 { margin-top:20px; }
+	  .text-fixed-right { width: 50%; min-width: 350px; float:right;}
+	  .text-fixed-left { width: 50%; min-width: 350px; padding-right: 20px; float:left}
+	   .grid {
+		display: flex;
+	   }
+	  .col-1-2 {
+		flex: 1;
+		margin-left: 20px;
+	  }
+	  .cole-1-2:last-child {
+		margin-left: 0px;
+	  }
+	  </style>
+	  <!-- Always get the latest version -->
+	  <!-- Not recommended for production sites! -->
+	  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	  
+	  <!-- Get minor updates and patch fixes within a major version -->
+	  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+	  
+	  <!-- Get patch fixes within a minor version -->
+	  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+	  
+	  <!-- Get a specific version -->
+	  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+	  
+	  <style>
+	  * {
+		box-sizing: border-box;
+	  }
+	  
+	  /* Container for flexboxes */
+	  .row {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  
+	  /* Create four equal columns */
+	  .column {
+		flex: 25%;
+		padding: 20px;
+	  }
+	  
+	  /* On screens that are 992px wide or less, go from four columns to two columns */
+	  @media screen and (max-width: 992px) {
+		.column {
+		  flex: 50%;
+		}
+	  }
+	  
+	  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+	  @media screen and (max-width: 600px) {
+		.row {
+		  flex-direction: column;
+		}
+	}
+	  </style>
+	  	<style type="text/css">
+ 
+			#share-buttons img {
+			width: 35px;
+			padding: 5px;
+			border: 0;
+			box-shadow: 0;
+			display: inline;
+			}
+			 
+			</style>
+			
+	  <script>
+	  includeHTML();
+	  </script>
+	  
+</head>
